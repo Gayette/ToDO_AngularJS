@@ -1,0 +1,197 @@
+
+/*/////////////////
+//// GENERAL//////
+////////////////*/
+body {
+	margin: 0;
+	padding: 0;
+    min-width: 250px;
+	font-family: Terminus, monospace;
+	background-color: black;
+	color: lime;
+	font-size: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Terminus, monospace;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;									
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+}
+
+ul li {
+    background: #888;
+    color: #fff;
+    border-color: black;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+}
+
+/*/////////////////
+///// HEAD ///////
+////////////////*/
+header {
+    background-color: black;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+/*/////////////////
+////// MAIN //////
+////////////////*/
+/* tasks input */
+.control-group {
+	border-style: solid;
+    border-width: 1px;
+    border-color: lime;
+}
+
+form input {
+	background: none;
+	color: lime;
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lime;
+	cursor: pointer;
+}
+
+form label {
+	font-size: 20px;
+}
+input[type="checkbox"] {
+    color: black;
+    background-color: lime;
+    border: none;
+    font-weight: bold;
+}
+
+input:focus {
+    background: #002200;
+    outline: none;
+}
+
+.close {
+	color: #33CCFF;
+}
+
+/* checkbox */
+input[type="checkbox"] {
+    opacity: 0;
+    display: table-cell;
+    width: 0;
+    height: 0;
+}
+
+input[type="checkbox"] + label:before {
+    position: relative;
+    content: '[ ]';
+    margin-right: 0.5em;
+}
+
+input[type="checkbox"]:focus + label:before {
+    background-color: #002200;
+}
+
+input[type="checkbox"]:checked + label:before {
+    content: '[ ]';
+}
+
+input[type="checkbox"]:checked + label:before {
+    content: '[X]';
+}
+
+.rem {
+	border-style: solid;
+    border-width: 1px;
+    border-color: lime;
+}
+
+.btn-info {
+    border-style: solid;
+    border-width: 1px;
+    border-color: lime;
+    text-align: center;
+    font-size: 10px;
+    color: #33CCFF;
+    cursor: pointer;    
+}
+
+.btn-danger { 
+	background-color: black; 
+    border-style: solid;
+    border-width: 1px;
+    border-color: lime;
+    color: #33CCFF;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+}
+/*/////////////////
+///// FOOTER /////   
+////////////////*/
+footer {
+    position:absolute;
+	bottom:0px;
+	text-align: center;
+}	/*								
+
+                   uuuuuuuuuuuuuuuuuuuuu.
+                   .u$$$$$$$$$$$$$$$$$$$$$$$$$$W.
+                 u$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Wu.
+               $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$i
+              $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+         `    $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+           .i$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$i
+           $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$W
+          .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$W
+         .$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$i
+         #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$.
+         W$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$u       #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$~
+$#      `"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$i        $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$        #$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$         $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+#$.        $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$#
+ $$      $iW$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$!
+ $$i      $$$$$$$#"" `"""#$$$$$$$$$$$$$$$$$#""""""#$$$$$$$$$$$$$$$W
+ #$$W    `$$$#"            "       !$$$$$`           `"#$$$$$$$$$$#
+  $$$     ``                 ! !iuW$$$$$                 #$$$$$$$#
+  #$$    $u                  $   $$$$$$$                  $$$$$$$~
+   "#    #$$i.               #   $$$$$$$.                 `$$$$$$
+          $$$$$i.                """#$$$$i.               .$$$$#
+          $$$$$$$$!         .   `    $$$$$$$$$i           $$$$$
+          `$$$$$  $iWW   .uW`        #$$$$$$$$$W.       .$$$$$$#
+            "#$$$$$$$$$$$$#`          $$$$$$$$$$$iWiuuuW$$$$$$$$W
+               !#""    ""             `$$$$$$$##$$$$$$$$$$$$$$$$
+          i$$$$    .                   !$$$$$$ .$$$$$$$$$$$$$$$#
+         $$$$$$$$$$`                    $$$$$$$$$Wi$$$$$$#"#$$`
+         #$$$$$$$$$W.                   $$$$$$$$$$$#   ``
+          `$$$$##$$$$!       i$u.  $. .i$$$$$$$$$#""
+             "     `#W       $$$$$$$$$$$$$$$$$$$`      u$#
+                            W$$$$$$$$$$$$$$$$$$      $$$$W
+                            $$`!$$$##$$$$``$$$$      $$$$!
+                           i$" $$$$  $$#"`  """     W$$$$
+                                                   W$$$$!
+                      uW$$  uu  uu.  $$$  $$$Wu#   $$$$$$
+                     ~$$$$iu$$iu$$$uW$$! $$$$$$i .W$$$$$$
+             ..  !   "#$$$$$$$$$$##$$$$$$$$$$$$$$$$$$$$#"
+             $$W  $     "#$$$$$$$iW$$$$$$$$$$$$$$$$$$$$$W
+             $#`   `       ""#$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                              !$$$$$$$$$$$$$$$$$$$$$#`
+                              $$$$$$$$$$$$$$$$$$$$$$!
+                            $$$$$$$$$$$$$$$$$$$$$$$`
+                             $$$$$$$$$$$$$$$$$$$$"
+
+*/                             
